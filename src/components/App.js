@@ -13,8 +13,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <h1 className="App-title">L-Elegance</h1>
           <Navbar />
-          <h1 className="App-title">Welcome to Elegance</h1>
         </header>
         {/* <div className = "Main-container"> */}
         {/* <p className="App-intro">
@@ -24,10 +24,6 @@ class App extends Component {
         <div id="App__routerContainer">
           { router }
           <Cart />
-        </div>
-        <div className="Search-holder">
-            <input type="text" className="SearchInput"></input>
-            <button className ="SearchButton">SUBMIT</button>
         </div>
         </div>
         {/* <Footer /> */}

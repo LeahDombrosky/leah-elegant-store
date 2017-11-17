@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Navbar.css';
 // import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
+import { Link } from 'react-router-dom';
+import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
 
 // export default class Navbar extends Component {
     class Navbar extends Component {
@@ -19,14 +21,21 @@ import './Navbar.css';
     return (
 <div className = "Nav-holder">
    <ul>
-      <li>LOGO</li>
-      <li>HOME</li>
+      {/* <li><img src = "../../images/download.png" alt="fashion"/></li> */}
+      <Link to="/"><li>HOME</li></Link>
+      <Link to="/store"><li>FASHION</li></Link>
+      <Link to="/store"><li>SHOES</li></Link>
+      <Link to="/"><li>ABOUT</li></Link>
       {/* <li>Log In / Sign Up</li> */}
       <li><button id="login-button" onClick={this.handlelogin}>
             Login/Register
           </button></li>
-      <li>SHOPPING CART</li>
+      <Link to="/checkout"><li><ShoppingCart id="Nav__shoppingCart" /></li></Link>
     </ul>
+    <div id="Nav__checkoutContainer">
+          {/* <div id="Nav__itemsInCart"> { items } </div> */}
+          {/* <ShoppingCart id="Nav__shoppingCart" /> */}
+    </div>
 </div>
 )
     }

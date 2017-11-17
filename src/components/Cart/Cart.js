@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import Product from '../../Store/Product/Product';
+import Product from '../../components/Store/Product/Product';
 import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
 import { Link } from "react-router-dom";
 import './Cart.css';
@@ -21,13 +21,15 @@ class Cart extends Component {
   }
 
   render() {
+    console.log(this.props)
     const {
-      stuffInCart,
+      stuff,
       total,
+      cart,
       howMuchStuff
     } = this.props;
 
-    let stuffComponents = stuffInCart.map( stuff => (
+    let stuffComponents = cart.map( stuff => (
       <Product 
         key={ stuff.id }
         title={ stuff.title }
@@ -63,9 +65,11 @@ class Cart extends Component {
 }
 
 function mapStateToProps( state ) {
-  var stuffInCart = state.cart.map( id => state.stuff.filter( stuff => stuff.id === id )[0] );
-  var total = stuffInCart.reduce( ( total, stuff ) => total + parseFloat(stuff.price), 0 ).toFixed(2);
-  return { stuffInCart, total, howMuchStuff: stuffInCart.length };
+  // var stuffInCart = state.cart.map( id => state.stuff.filter( stuff => stuff.id === id )[0] );
+  // console.log(stuffInCart)
+  // var total = stuffInCart.reduce( ( total, stuff ) => total + parseFloat(stuff.price), 0 ).toFixed(2);
+  // return { stuffInCart, total, howMuchStuff: stuffInCart.length };
+  return state
 }
 
 export default connect( mapStateToProps )( Cart );

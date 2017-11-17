@@ -12,6 +12,8 @@ const { secret } = require("./config");
 const { domain, clientID, clientSecret } = require("./config");
 const {connectionString} = require("./config")
 
+// const data = require('./data')
+
 const port = 3001;
 // const connectionString = `postgres://${dbCustomer}@localhost/${database}`;
 const app = express();
@@ -70,6 +72,17 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
+
+// app.get('/populate', (req,res) => {
+//   const db = app.get('db')
+//   for(let i = 0; i < data.length; i++) {
+    
+//     const { ID, Item_Name, Description, Price, Type, Brand_Name } = data[i]
+    
+//     db.addProduct([ID, Item_Name, Description, 1, Price, Type, Brand_Name])
+//   }
+// })
+
 app.get(
   "/login",
   passport.authenticate("auth0", {
@@ -88,10 +101,51 @@ app.get("/api/test", (req, res, next) => {
     .getCustomers()
     .then(response => {
       res.json(response);
+      
     })
     .catch(console.log);
 });
 
+app.get("/api/products", (req, res, next) => {
+  const dbInstance = req.app.get('db')
+  dbInstance
+  .getStuff().then(response => {
+    console.log(response)
+    res.status(200).send(response)
+  })
+  .catch(() => res.status(500).send())
+});
+
+app.get("/api/products/:id", (req, res, next) => {
+  req.app
+    .get("db")
+    .getStuff()
+    .then(response => {
+      res.json(response);
+    })
+    .catch(console.log);
+});
+
+app.get("/api/fashion", (req, res, next) => {
+  req.app
+    .get("db")
+    .getFashion()
+    .then(response => {
+      res.json(response);
+    })
+    .catch(console.log);
+});
+
+app.get("/api/shoes", (req, res, next) => {
+  req.app
+    .get("db")
+    .getShoes()
+    .then(response => {
+      console.log(response)
+      res.json(response);
+    })
+    .catch(console.log);
+});
 
 app.listen(port, () => {
     console.log(`We are listening on port: ${port}`);

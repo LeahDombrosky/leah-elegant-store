@@ -2,7 +2,7 @@ export default [
     {
       id: "0001",
       img: "https://i.ebayimg.com/images/g/1X0AAMXQeW5TZbMN/s-l500.jpg",
-      price: 300.00,
+      price: 300.00.toFixed(2),
       title: "Giorgio Armani SKIRT",
       description: "TOTALLY BREATHTAKING and LUXURIOUS skirt by GIORGIO ARMANI.",
       promo: "Use code PROVOPICKUP for free shipping."
@@ -10,7 +10,7 @@ export default [
     {
       id: "0002",
       img: "https://i.ebayimg.com/images/g/ZtIAAOSwNchaCPFH/s-l500.jpg",
-      price: 800.00,
+      price: 800.00.toFixed(2),
       title: "Valentino Black Ankle Booties",
       description: "Gorgeous Valentino Garavani ankle boots made in Italy from calfskin leather",
       promo: "Use code PROVOPICKUP for free shipping."

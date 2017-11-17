@@ -1,0 +1,23 @@
+.Home{
+    /* background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg'); */
+    margin: 0;
+    background-size: cover;
+    height: 500pt;
+    width: 100%;
+    
+}
+.SearchButton{
+width: 180px;
+height: 45px;
+color: white;
+background-color: #403f39;
+border: 0;
+border-radius: 5px;
+font-size: 1.5rem;
+}
+
+.SearchInput{
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+}
