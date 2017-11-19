@@ -1,22 +1,56 @@
-import React, { Component } from 'react';
-import './Footer.css';
+// import React, { Component } from 'react';
+// import './Footer.css';
 // import 'font-awesome/css/font-awesome.css';
+// import Twitter from 'react-icons/lib/fa/shopping-cart';
 
-class Footer extends Component {
-    render() {
-    return (
-      <div>
-      <div id="footer"> Contact us: 
-            555-555-5555      
-        seetheweather@somewhere.com
-        <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-        <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-        <a href="https://google.com"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-        <a href="mailto:leahliya59@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>   
-    </div>
+// class Footer extends Component {
+//     render() {
+//     return (
+    
+//     <div className = "contact_footer_center">
+//       <ul className='footer_help_menu'>
+//         <li>CONTACT US</li>
+//             {/* <i class="fa fa-twitter" aria-hidden="true"></i>@dcrew_help</li> */}
+//         <li><Twitter id="Twitter" /></li>              
+//       </ul>
+//     </div>
+
+// )
+//     }
+// }
+// export default Footer;
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import {Footer} from 'react-materialize';
+// import '../../resource/template.css';
+
+
+
+class RT_Footer extends Component{
+  render(){
+return (
+<div>
+{this.props.children}
+  <Footer copyrights="&copy; 2015 Copyright Text"
+  moreLinks={
+    <Link className="grey-text text-lighten-4 right" href="#!">More Links</Link>
+  }
+  links={
+    <ul>
+      <li><Link to="/About Us" className="grey-text text-lighten-3">About Us</Link></li>
+      <li><Link to="/Terms & Conditions" className="grey-text text-lighten-3">Terms & Conditions</Link></li>
+      <li><Link to="/Help" className="grey-text text-lighten-3">Help</Link></li>
+      <li><Link to="/Contact Us" className="grey-text text-lighten-3">Contact Us</Link></li>
+    </ul>
+  }
+  className='example'
+  >
+    <h5 className="white-text">Footer Content</h5>
+    <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+  </Footer>
+
 </div>
-
-)
-    }
+);
+ }
 }
-export default Footer;
+export default RT_Footer;

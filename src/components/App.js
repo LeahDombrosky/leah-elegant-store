@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './Nav/Navbar';
-import Cart from './Cart/Cart';
+// import Cart from './Cart/Cart';
 // import Footer from './Footer/Footer';
 
 import router from '../router';
@@ -23,7 +23,7 @@ class App extends Component {
         <div id="App__mainContainer">
         <div id="App__routerContainer">
           { router }
-          <Cart />
+          {/* <Cart /> */}
         </div>
         </div>
         {/* <Footer /> */}
