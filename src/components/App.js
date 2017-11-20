@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Nav/Navbar';
 // import Cart from './Cart/Cart';
-// import Footer from './Footer/Footer';
+import Footer from './Footer/Footer';
 
 import router from '../router';
 
@@ -26,7 +26,7 @@ class App extends Component {
           {/* <Cart /> */}
         </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

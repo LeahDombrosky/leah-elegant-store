@@ -12,7 +12,7 @@ export default function Details (props) {
       <p> { '<' } Back to store </p>
     </Link>
     {/* <div> */}
-      <img alt="Details img" src={img.img} width="170px" height="170px" />
+      <img alt="Details img" src={img.img} width="400px" height="500px" />
       {/* </div> */}
       <p id="Details__price"> {title.title} </p>
       <p id="Details__price"> {price.price}</p>
