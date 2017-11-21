@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './Nav/Navbar';
 // import Cart from './Cart/Cart';
 import Footer from './Footer/Footer';
+import Store from './Store/Store';
 
 import router from '../router';
 
@@ -26,6 +27,7 @@ class App extends Component {
           {/* <Cart /> */}
         </div>
         </div>
+        {/* <Store /> */}
         <Footer />
       </div>
     );

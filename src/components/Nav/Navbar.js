@@ -23,7 +23,7 @@ import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
    <ul>
       {/* <li><img src = "../../images/download.png" alt="fashion"/></li> */}
       <Link to="/"><li>HOME</li></Link>
-      <Link to="/store"><li>FASHION</li></Link>
+      <Link to="/store"><li>GARMENT</li></Link>
       <Link to="/store"><li>SHOES</li></Link>
       <Link to="/"><li>ABOUT</li></Link>
       {/* <li>Log In / Sign Up</li> */}

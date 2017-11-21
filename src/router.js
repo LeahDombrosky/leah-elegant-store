@@ -10,6 +10,8 @@ export default (
   <Switch>
     <Route component={ Home } path="/" exact />
     <Route component={ Store } path="/store"/>
+    {/* <Route component={ Shoes } path="/shoes"/>
+    <Route component={ Garment } path="/garment"/> */}
     <Route component={ Details } path="/details/:id" /> 
     <Route component={ Checkout } path="/checkout" />
   </Switch>
