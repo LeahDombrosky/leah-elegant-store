@@ -7,8 +7,8 @@ class Home extends Component {
       return (
         <div className="Home">
         <div className="Search-holder">
-            <input type="text" className="SearchInput"></input>
-            <Link to="/store"><button className ="SearchButton">VIEW STORE</button></Link>
+            <input type="text" className="Search-Input"></input>
+            <Link to="/store"><button className ="Search-Button">VIEW STORE</button></Link>
         </div>
         </div>
          );

@@ -88,11 +88,11 @@ function Footer(/*props*/) {
             eventKey={1}>
             CONTACT US: leah_inc@yahoo.com
           </NavItem>
-          <NavItem
+          {/* <NavItem
             eventKey={2}
             title="Item">
               ABOUT US
-          </NavItem>
+          </NavItem> */}
           <NavItem
             eventKey={3}>
             {/* Some other professional link */}

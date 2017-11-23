@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './Nav/Navbar';
-// import Cart from './Cart/Cart';
+import Cart from './Cart/Cart';
 import Footer from './Footer/Footer';
 import Store from './Store/Store';
 
@@ -15,19 +15,17 @@ class App extends Component {
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">L-Elegance</h1>
-          <Navbar />
+        <Navbar />
         </header>
-        {/* <div className = "Main-container"> */}
-        {/* <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p> */}
+        <body>
         <div id="App__mainContainer">
         <div id="App__routerContainer">
           { router }
-          {/* <Cart /> */}
+          <Cart />
         </div>
         </div>
         {/* <Store /> */}
+        </body>
         <Footer />
       </div>
     );

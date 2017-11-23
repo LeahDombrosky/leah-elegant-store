@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Navbar.css';
-// import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
 import { Link } from 'react-router-dom';
 import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
+import { connect } from "react-redux";
 
 // export default class Navbar extends Component {
     class Navbar extends Component {
@@ -21,9 +21,9 @@ import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
     return (
 <div className = "Nav-holder">
    <ul>
-      {/* <li><img src = "../../images/download.png" alt="fashion"/></li> */}
       <Link to="/"><li>HOME</li></Link>
-      <Link to="/store"><li>GARMENT</li></Link>
+      {/* <Link to="/store"><li id="Fashion-logo">FASHION<img src = "../../images/fashion-logos (1).jpg" alt="fashion"/></li></Link> */}
+      <Link to="/store"><li>WOMEN'S APPAREL</li></Link>
       <Link to="/store"><li>SHOES</li></Link>
       <Link to="/"><li>ABOUT</li></Link>
       {/* <li>Log In / Sign Up</li> */}

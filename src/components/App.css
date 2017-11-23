@@ -1,3 +1,10 @@
+body{
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/abstract-16971_960_720.jpg?alt=media&token=063d9532-a795-439b-8f51-cd15d9a45866');
+  background-size: cover; */
+  
+}
+
+
 .App {
   text-align: center;
 }
@@ -8,10 +15,10 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: white;
   height: 250px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-title {
@@ -20,6 +27,9 @@
 
 .App-intro {
   font-size: large;
+}
+h1{
+  font-family: 'Satisfy', cursive;
 }
 
 @keyframes App-logo-spin {

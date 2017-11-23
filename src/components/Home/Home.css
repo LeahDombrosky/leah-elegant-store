@@ -3,10 +3,11 @@
     margin: 0;
     background-size: cover;
     height: 400pt;
-    width: 100%;
+    width: 50%;
+    justify-self: center;
     
 }
-.SearchButton{
+.Search-Button{
 width: 180px;
 height: 45px;
 color: white;
@@ -16,7 +17,7 @@ border-radius: 5px;
 font-size: 1.5rem;
 }
 
-.SearchInput{
+.Search-Input{
     width: 180px;
     height: 45px;
     border-radius: 5px;
