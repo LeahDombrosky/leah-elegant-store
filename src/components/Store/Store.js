@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import './Store.css';
-import Product from '../Store/Product/Product';
+import Product from './Product/Product';
 import { addToCart, getProducts} from '../../ducks/reducer';
 // import axios from "axios";
 // import { Link } from 'react-router-dom';

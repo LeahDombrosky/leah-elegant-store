@@ -5,23 +5,23 @@ import { Link } from 'react-router-dom';
 
 
 export default function Details (props) {
+  console.log(props)
   const {id, img, title, price, addToCart} = props.location.state;
-  console.log( { id });
+
   return (
     <div id="Details__container">
-    <Link to="/" id="Details__storeLink">
-      <p> { '<' } Back to store </p>
-    </Link>
-    {/* <div> */}
-      <img alt="Details img" src={img.img} width="400px" height="500px" />
+       <Link to="/" id="Details__storeLink">
+         <p> { '<' } Back to store </p>
+       </Link>
+      {/* <div> */}
+         <img alt="Details img" src={img} width="500px" height="700px" />
       {/* </div> */}
-      <p id="Details__title"> {title.title} </p>
-      <p id="Details__price"> {price.price}</p>
+         <p id="Details__title"> {title} </p>
+         <p id="Details__price"> {price}</p>
 
-      {/* <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
-         <span> ${ price } </span>
-         <span> Add to Cart </span> 
-        </div> */}
+        <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
+           <span> Add to Cart </span> 
+        </div>
     </div>
   )
 }

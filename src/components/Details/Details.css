@@ -3,6 +3,8 @@
   width: 400px;
   border-color: blue;  */
   padding: 20px 50px;
+  justify-content: center;
+  align-content: center;
   }
   
   #Details__storeLink {
@@ -38,4 +40,9 @@
     position: fixed;
     bottom: 0; 
     width: 100%;
+  }
+
+  #StoreProduct__addToCart{
+    justify-self: center;
+
   }
