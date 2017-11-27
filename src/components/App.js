@@ -17,7 +17,7 @@ class App extends Component {
           <h1 className="App-title">L-Elegance</h1>
         <Navbar />
         </header>
-        <body>
+        <div>
         <div id="App__mainContainer">
         <div id="App__routerContainer">
           { router }
@@ -25,7 +25,7 @@ class App extends Component {
         </div>
         </div>
         {/* <Store /> */}
-        </body>
+        </div>
         <Footer />
       </div>
     );

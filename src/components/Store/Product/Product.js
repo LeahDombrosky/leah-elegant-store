@@ -11,20 +11,17 @@ export default function Product( { id, title, img, price, addToCart } ) {
     
     <Link  to={{ pathname: `/details/${id}`, state: {id, title, img, price}}}>
       <div id="CartProduct__container">
-        <img alt="Product img" src={ img } width="300px" height="400px" />
-        {/* <span id="CartProduct__title"> { title } </span> */}
+        <img alt="Product img" src={ img } width="350px" height="400px" />
       </div>
     </Link>
       <div id="StoreProduct__details">
         <div id="StoreProduct__title">
           <Link to={{ pathname: `/details/${id}`, state: {id, title, img, price}}} className="StoreProduct__navLink" >
-            <p> { title } </p>
-            
+            <p> { title } </p>  
           </Link>
         </div>
         <p> ${ price } </p>
-        <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
-          {/* <p> ${ price } </p> */}
+        <div id="StoreProduct__addToCart" onClick={ () => {  addToCart( id ) } }>
           <span> Add to Cart </span>
         </div>
       </div>

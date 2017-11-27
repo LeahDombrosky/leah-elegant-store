@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import './Store.css';
-import Product from './Product/Product';
-import { addToCart, getProducts} from '../../ducks/reducer';
+import '../Store/Store.css';
+import Product from '../Store/Product/Product';
+import { addToCart, getApparel} from '../../ducks/reducer';
 
-class Store extends Component {
+class Apparel extends Component {
 
 componentDidMount(){
-  this.props.getProducts().then(res => console.log(res))
+  this.props.getApparel().then(res => console.log(res))
 }
 
  render() { 
@@ -38,4 +38,4 @@ function mapStateToProps( state ) {
   }
 }
 
-export default connect( mapStateToProps, { getProducts, addToCart } )( Store );
+export default connect( mapStateToProps, { getApparel, addToCart } )( Apparel );

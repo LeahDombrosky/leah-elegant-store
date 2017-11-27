@@ -12,6 +12,8 @@ const initialState = {
 const ADD_TO_CART = "ADD_TO_CART";
 const CHECKOUT = "CHECKOUT";
 const GET_PRODUCTS = "GET_PRODUCTS";
+const GET_APPAREL = "GET_APPAREL";
+const GET_SHOES = "GET_SHOES";
 
 // Reducer
 export default function reducer( state = initialState, action ) {
@@ -25,10 +27,22 @@ export default function reducer( state = initialState, action ) {
       };
       return false;
     case CHECKOUT: return Object.assign({}, initialState);
+    
     case GET_PRODUCTS+"_PENDING": return Object.assign({}, state, {loading: true});
     case GET_PRODUCTS+"_FULFILLED":
     console.log(action.payload);
     return Object.assign({}, state, {loading: false, stuff : action.payload});
+
+    case GET_APPAREL+"_PENDING": return Object.assign({}, state, {loading: true});
+    case GET_APPAREL+"_FULFILLED":
+    console.log(action.payload);
+    return Object.assign({}, state, {loading: false, stuff : action.payload});
+
+    case GET_SHOES+"_PENDING": return Object.assign({}, state, {loading: true});
+    case GET_SHOES+"_FULFILLED":
+    console.log(action.payload);
+    return Object.assign({}, state, {loading: false, stuff : action.payload});
+
     default: return state;
 
   }
@@ -52,5 +66,17 @@ export function getProducts() {
   return {
     type: GET_PRODUCTS,
     payload: axios.get('/api/products').then(response=> response.data)
+  }
+}
+export function getApparel() {
+  return {
+    type: GET_APPAREL,
+    payload: axios.get('/api/apparel').then(response=> response.data)
+  }
+}
+export function getShoes() {
+  return {
+    type: GET_SHOES,
+    payload: axios.get('/api/shoes').then(response=> response.data)
   }
 }

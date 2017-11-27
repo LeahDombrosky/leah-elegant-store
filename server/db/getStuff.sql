@@ -1,1 +1,1 @@
-SELECT * FROM products WHERE type = 'Shoes' or type = 'Garment';
+SELECT * FROM products;

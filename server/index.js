@@ -126,10 +126,10 @@ app.get("/api/products/:id", (req, res, next) => {
     .catch(console.log);
 });
 
-app.get("/api/fashion", (req, res, next) => {
+app.get("/api/apparel", (req, res, next) => {
   req.app
     .get("db")
-    .getFashion()
+    .getApparel()
     .then(response => {
       res.json(response);
     })
