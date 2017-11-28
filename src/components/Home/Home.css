@@ -1,9 +1,10 @@
 .Home{
-    background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg');
+    /* background-image: url('https://i.pinimg.com/736x/3a/be/c1/3abec1c81543f58c385cc9f065c6da84--hot-pink-stuff-all-things-pink.jpg'); */
+    background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg'); 
     margin: 0;
     background-size: cover;
-    height: 400pt;
-    width: 50%;
+    height: 800px;
+    width: 50%; 
     justify-self: center;
     
 }

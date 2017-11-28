@@ -25,7 +25,7 @@ export default function reducer( state = initialState, action ) {
       if ( state.cart.indexOf( action.payload ) === -1 ) {
         return Object.assign({},state,{cart: [ ...state.cart, action.payload ]})
       };
-      return false;
+      return state;
     case CHECKOUT: return Object.assign({}, initialState);
     
     case GET_PRODUCTS+"_PENDING": return Object.assign({}, state, {loading: true});

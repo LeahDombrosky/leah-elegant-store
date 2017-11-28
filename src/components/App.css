@@ -1,7 +1,7 @@
 body{
-  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/abstract-16971_960_720.jpg?alt=media&token=063d9532-a795-439b-8f51-cd15d9a45866');
-  background-size: cover; */
-  
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/Luxury_crepe_-_hot_pink.jpg?alt=media&token=96b39a3c-659c-4d16-a9ca-03f685bcd314'); */
+  /* background-image: <iframe width="854" height="480" src="https://www.youtube.com/embed/tatgxtiS8g0" frameborder="0" gesture="media" allowfullscreen></iframe>; */
+  background-size: cover;
 }
 
 
@@ -15,14 +15,16 @@ body{
 }
 
 .App-header {
-  background-color: white;
+  /* background-image: <iframe width="854" height="480" src="https://www.youtube.com/embed/tatgxtiS8g0" frameborder="0" gesture="media" allowfullscreen></iframe>; */
+  background-color: white; 
   height: 250px;
   padding: 20px;
   color: black;
 }
 
 .App-title {
-  font-size: 4.5em;
+  font-size: 5em;
+  color: fuchsia;
 }
 
 .App-intro {

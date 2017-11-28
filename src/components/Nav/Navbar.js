@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
+// import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
+import ShoppingBag from 'react-icons/lib/fa/shopping-bag';
 import { connect } from "react-redux";
 
 // export default class Navbar extends Component {
@@ -33,7 +34,7 @@ import { connect } from "react-redux";
       <li><button id="login-button" onClick={this.handlelogin}>
             Login/Register
           </button></li>
-      <Link to="/checkout"><li><ShoppingCart id="Nav__shoppingCart" /></li></Link>
+      <Link to="/checkout"><li><ShoppingBag id="Nav__shoppingCart" /></li></Link>
     </ul>
     <div id="Nav__checkoutContainer">
           {/* <div id="Nav__itemsInCart"> { items } </div> */}

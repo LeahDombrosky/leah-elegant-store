@@ -7,6 +7,7 @@ const passport = require("passport");
 const Auth0Strategy = require("passport-auth0");
 // const strategy = require(`${__dirname}/strategy.js`);
 // const { dbCustomer, database } = require("./config").massive;
+const configureRoutes = require('./routes/payment');
 
 const { secret } = require("./config");
 const { domain, clientID, clientSecret } = require("./config");
@@ -141,7 +142,6 @@ app.get("/api/shoes", (req, res, next) => {
     .get("db")
     .getShoes()
     .then(response => {
-      console.log(response)
       res.json(response);
     })
     .catch(console.log);

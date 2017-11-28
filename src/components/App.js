@@ -12,9 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header">{/* <iframe width="854" height="480" src="https://www.youtube.com/embed/tatgxtiS8g0" frameborder="0" gesture="media" allowfullscreen></iframe> */}
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">L-Elegance</h1>
+          <h1 className="App-title">L-egance</h1>
         <Navbar />
         </header>
         <div>
@@ -26,7 +26,7 @@ class App extends Component {
         </div>
         {/* <Store /> */}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

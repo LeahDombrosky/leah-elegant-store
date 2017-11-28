@@ -32,9 +32,10 @@ ul, li{
   }
 
   #Nav__shoppingCart {
-    color: black;
-    font-size: 60px;
+    color: fuchsia;
+    font-size: 50px;
     position: relative;
+
   }
   #Fashion-logo{
       background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/fashion-logos.jpg?alt=media&token=b16a7e15-55be-4990-9bc2-98fa1dc31aa9');
