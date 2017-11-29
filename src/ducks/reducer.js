@@ -40,16 +40,20 @@ export default function reducer( state = initialState, action ) {
     return Object.assign({}, state, {loading: false, stuff : action.payload});
 
     case ADD_TO_CART: 
+    console.log("add to cart:")
     if ( state.cart.indexOf( action.payload ) === -1 ) {
       return Object.assign({},state,{cart: [ ...state.cart, action.payload ]})
     };
-    return state;
+    // return state;
 
     case REMOVE_FROM_CART: 
+    console.log("cart:", state.cart)
     if ( state.cart.indexOf( action.payload ) !== -1 ) {
       var index = state.cart.indexOf(action.payload);
+      console.log("cart pre splice:", state.cart)
       state.cart.splice(index, 1);
-      return Object.assign({},state,{cart: [ ...state.cart, action.payload ]})
+      console.log("cart after splice", state.cart)
+      return Object.assign({},state,{cart: state.cart })
     };
     
     return state;

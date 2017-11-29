@@ -8,7 +8,7 @@ import TraashO from 'react-icons/lib/fa/trash-o';
 
 
 
-export default function Product( { title, img, price, id } ) {
+export default function Product( { title, img, price, id, removeFromCart } ) {
 return (
   <div id="CheckoutProduct__container">
         <img id="CheckoutProduct__img" src={ img } alt="Product" width="200px" height="240px" />
@@ -20,7 +20,9 @@ return (
           <p id="CheckoutProduct__price"> ${ price } </p>
           {/* <p id="CheckoutProduct__count"> { count } </p> */}
            {/* <MinusSquare id="MinusSquare" />  */}
-          <TraashO id="TraashO" onClick={ () => { removeFromCart( id ) } }/>
+           <div onClick={ () => { removeFromCart( id ) } }>
+          <TraashO id="TraashO"/>
+          </div>
         </div>
       </div>
   )

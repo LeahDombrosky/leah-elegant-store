@@ -5,9 +5,9 @@ import './Store.css';
 
 import Product from '../Store/Product/Product';
 
-import { addToCart } from '../ducks/reducer';
+import { addToCart, removeFromCart } from '../ducks/reducer';
 
-function Store( { stuff, cart, history, addToCart } ) {
+function Store( { stuff, cart, history, addToCart, removeFromCart } ) {
   const stuffComponents = stuff.map( (stuff) => (
     <Product
       key={ stuff.id }
@@ -16,6 +16,7 @@ function Store( { stuff, cart, history, addToCart } ) {
       img={ stuff.img }
       price={ stuff.price }
       addToCart={ addToCart }
+      removeFromCart ={ removeFromCart }
     />
   ))
 

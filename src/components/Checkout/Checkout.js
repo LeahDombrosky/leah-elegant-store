@@ -1,23 +1,26 @@
-import React from "react";
+import React, { Component} from "react";
 import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
-import { checkout } from '../../ducks/reducer';
+import { checkout, removeFromCart } from '../../ducks/reducer';
 import { connect } from "react-redux";
 import { Link } from 'react-router-dom';
 import Product from './Product/Product';
 import Payment from '../Payment/Payment';
 import './Checkout.css';
 
-function Checkout( { stuffInCart, total, checkout, count } ) {
+class Checkout extends Component {
+render() {
 
-  const stuffComponents = 
-  stuffInCart.map( stuff => (
+  const { stuffInCart, total, checkout, count, removeFromCart } = this.props
+
+  const stuffComponents = stuffInCart.map( stuff => (
     <Product 
       key={ stuff.id }
       title={ stuff.title }
       img={ stuff.img }
       price={ stuff.price }
       id={ stuff.id }
+     removeFromCart={ removeFromCart } 
     />
   ));
 
@@ -30,13 +33,14 @@ function Checkout( { stuffInCart, total, checkout, count } ) {
         <p id="Checkout__totalTitle"> Total </p>
         <span id="Checkout__total">${ total }</span>
         {/* <button id="Checkout__checkout" onClick={ checkout }> Checkout </button> */}
-        <p id="Checkout__totalCount"> { count } </p>
+        {/* <p id="Checkout__totalCount"> { count } </p> */}
         <Link to="/payment">CHECKOUT</Link>
         {/* <Link to={{ pathname: '/payment', stuff: {id, title, img, total}}}>CHECKOUT</Link> */}
       </div>
      
     </div>
   )
+}
 }
 
 function mapStateToProps( state ) {
@@ -46,4 +50,4 @@ function mapStateToProps( state ) {
   return { stuffInCart, total, count };
 }
 
-export default connect( mapStateToProps, { checkout } )( Checkout );
+export default connect( mapStateToProps, { checkout, removeFromCart } )( Checkout );
