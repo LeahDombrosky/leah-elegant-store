@@ -37,12 +37,13 @@
     border-radius: 2px;
     height: 50px;
     width: 150px;
-    position: fixed;
+    /* position: absolute; */
     bottom: 0; 
-    width: 100%;
+    width: 40%;
   }
 
-  #StoreProduct__addToCart{
-    justify-self: center;
-
+  #AddToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

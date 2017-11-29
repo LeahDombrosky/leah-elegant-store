@@ -37,12 +37,15 @@
   margin: 0;
   background-color: white;
   width: 100px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  /* font-size: 20px; */
 }
 
 .StoreProduct__navLink {
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }

@@ -10,6 +10,7 @@ const initialState = {
 
 // Action Types
 const ADD_TO_CART = "ADD_TO_CART";
+const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 const CHECKOUT = "CHECKOUT";
 const GET_PRODUCTS = "GET_PRODUCTS";
 const GET_APPAREL = "GET_APPAREL";
@@ -27,6 +28,8 @@ export default function reducer( state = initialState, action ) {
       };
       return state;
     case CHECKOUT: return Object.assign({}, initialState);
+
+    case REMOVE_FROM_CART: return state;
     
     case GET_PRODUCTS+"_PENDING": return Object.assign({}, state, {loading: true});
     case GET_PRODUCTS+"_FULFILLED":
@@ -52,6 +55,14 @@ export default function reducer( state = initialState, action ) {
 export function addToCart( id ) {
   return {
     type: ADD_TO_CART,
+    payload: id
+  }
+}
+
+export function remove
+FromCart( id ) {
+  return {
+    type: REMOVE_FROM_CART,
     payload: id
   }
 }

@@ -34,6 +34,12 @@ h1{
   font-family: 'Satisfy', cursive;
 }
 
+#Fashion-logo{
+  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/fashion-logos.jpg?alt=media&token=b16a7e15-55be-4990-9bc2-98fa1dc31aa9'); */
+  height: 80px;
+  width:  50px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

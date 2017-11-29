@@ -15,12 +15,14 @@ export default function Product( { id, title, img, price, addToCart } ) {
       </div>
     </Link>
       <div id="StoreProduct__details">
-        <div id="StoreProduct__title">
+        {/* <div id="StoreProduct__title"> */}
+        <div>
           <Link to={{ pathname: `/details/${id}`, state: {id, title, img, price}}} className="StoreProduct__navLink" >
-            <p> { title } </p>  
+            <p> { title } </p>
+            <p> ${ price } </p> 
           </Link>
         </div>
-        <p> ${ price } </p>
+        {/* <p> ${ price } </p> */}
         <div id="StoreProduct__addToCart" onClick={ () => {  addToCart( id ) } }>
           <span> Add to Cart </span>
         </div>

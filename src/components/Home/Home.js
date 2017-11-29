@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import Search from 'react-icons/lib/fa/search';
 
 class Home extends Component {
     render() {
       return (
         <div className="Home">
         <div className="Search-holder">
-            <input type="text" className="Search-Input"></input>
-            <Link to="/store"><button className ="Search-Button">VIEW STORE</button></Link>
+            {/* <input type="text" className="Search-Input"></input>
+            <Link to="/store"><button className ="Search-Button"><Search id="Search-icon" /></button></Link> */}
+            {/* <Link to="/store"><Search id="Search-icon" /></Link> */}
         </div>
         </div>
          );

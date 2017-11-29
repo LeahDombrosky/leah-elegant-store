@@ -23,27 +23,14 @@ class Details extends Component {
       {/* </div> */}
          <p id="Details__title"> {title} </p>
          <p id="Details__price"> ${price}</p>
-         
+      <div id="AddToCart">   
          <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
-            <span> Add to Cart </span>
+            <p> Add to Cart </p>
          </div>
+      </div>   
     </div>
   )
 }
 }
 export default connect(null, { getProducts, addToCart } )( Details );
 
-
-{/* <div id="Details__container">
-      <Link to="/" id="Details__storeLink">
-      <p> { '<' } Back to store </p>
-    </Link>
-      <img id="Details__img" src={ swag.img } alt="Product" width="400px" />
-      <p id="Details__title"> { swag.title } </p>
-      <p id="Details__price"> ${ swag.price } </p>
-      <button id="Details__addToCart" onClick={ addAndRedirect }> Add to Cart </button>
-      <p> { swag.description } </p>
-      <p> { swag.promo } </p>
-    </div>
-  )
-} */}
