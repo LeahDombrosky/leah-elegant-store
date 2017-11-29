@@ -24,7 +24,7 @@ class Details extends Component {
          <p id="Details__title"> {title} </p>
          <p id="Details__price"> ${price}</p>
       <div id="AddToCart">   
-         <div id="StoreProduct__addToCart" onClick={ () => { addToCart( id ) } }>
+         <div id="StoreProduct__addToCart" onClick={ () => {         addToCart( id ) } }>
             <p> Add to Cart </p>
          </div>
       </div>   

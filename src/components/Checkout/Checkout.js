@@ -8,7 +8,7 @@ import Product from './Product/Product';
 import Payment from '../Payment/Payment';
 import './Checkout.css';
 
-function Checkout( { stuffInCart, total, checkout } ) {
+function Checkout( { stuffInCart, total, checkout, count } ) {
 
   const stuffComponents = 
   stuffInCart.map( stuff => (
@@ -30,9 +30,11 @@ function Checkout( { stuffInCart, total, checkout } ) {
         <p id="Checkout__totalTitle"> Total </p>
         <span id="Checkout__total">${ total }</span>
         {/* <button id="Checkout__checkout" onClick={ checkout }> Checkout </button> */}
-        <Link to="/payment">Checkout</Link>
+        <p id="Checkout__totalCount"> { count } </p>
+        <Link to="/payment">CHECKOUT</Link>
+        {/* <Link to={{ pathname: '/payment', stuff: {id, title, img, total}}}>CHECKOUT</Link> */}
       </div>
-      {/* <p className="App-intro">CHECKOUT LEAH</p> */}
+     
     </div>
   )
 }
@@ -40,7 +42,8 @@ function Checkout( { stuffInCart, total, checkout } ) {
 function mapStateToProps( state ) {
   var stuffInCart = state.cart.map( id => state.stuff.filter( stuff => stuff.id === id )[0] );
   var total = stuffInCart.reduce( ( total, stuff ) => total + parseFloat(stuff.price), 0 ).toFixed(2);
-  return { stuffInCart, total };
+  var count = count + 1;
+  return { stuffInCart, total, count };
 }
 
 export default connect( mapStateToProps, { checkout } )( Checkout );
