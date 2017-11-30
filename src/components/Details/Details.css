@@ -47,3 +47,20 @@
     justify-content: center;
     align-items: center;
   }
+  #StoreProduct__addToCart{
+    background-color: fuchsia;
+    color: white;
+    width: 85px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 0 15px;
+    cursor: pointer;
+    bottom: 0;
+    position: relative;
+    font-weight: bold;
+    
+  }

@@ -4,8 +4,7 @@ import { removeFromCart } from '../../../ducks/reducer';
 import './Product.css';
 // import MinusSquare from 'react-icons/lib/fa/minus-square';
 import TraashO from 'react-icons/lib/fa/trash-o';
-
-
+// import Times from 'react-icons/lib/fa/times';
 
 
 export default function Product( { title, img, price, id, removeFromCart } ) {
@@ -18,9 +17,8 @@ return (
           <p id="CheckoutProduct__title"> { title } </p> 
     </Link>
           <p id="CheckoutProduct__price"> ${ price } </p>
-          {/* <p id="CheckoutProduct__count"> { count } </p> */}
-           {/* <MinusSquare id="MinusSquare" />  */}
            <div onClick={ () => { removeFromCart( id ) } }>
+           {/* <MinusSquare id="MinusSquare" />  */}
           <TraashO id="TraashO"/>
           </div>
         </div>

@@ -15,7 +15,7 @@ class Details extends Component {
     const { addToCart } = this.props
   return (
     <div id="Details__container">
-       <Link to="/" id="Details__storeLink">
+       <Link to="/store" id="Details__storeLink">
          <p> { '<' } Back to store </p>
        </Link>
       {/* <div> */}
@@ -25,7 +25,7 @@ class Details extends Component {
          <p id="Details__price"> ${price}</p>
       <div id="AddToCart">   
          <div id="StoreProduct__addToCart" onClick={ () => {         addToCart( id ) } }>
-            <p> Add to Cart </p>
+            <p> ADD TO CART </p>
          </div>
       </div>   
     </div>

@@ -96,6 +96,11 @@ app.get("/api/me", function(req, res) {
   res.status(200).json(req.user);
 });
 
+app.get("/logout", function(req, res) {
+  req.logout()
+  res.redirect("http://localhost:3000/")
+});
+
 app.get("/api/test", (req, res, next) => {
   req.app
     .get("db")

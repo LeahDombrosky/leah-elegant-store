@@ -2,8 +2,9 @@
   width: 400px;
   height: 550px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -18,7 +19,7 @@
 }
 
 #StoreProduct__addToCart {
-  background-color: gray;
+  background-color: fuchsia;
   color: white;
   width: 85px;
   height: 60px;
@@ -26,11 +27,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
   padding: 0 15px;
   cursor: pointer;
   bottom: 0;
-  /* position: absolute; */
-  
+  position: relative;
+  font-weight: bold;
 }
 
 #StoreProduct__title {

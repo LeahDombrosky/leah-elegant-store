@@ -34,7 +34,8 @@ render() {
         <span id="Checkout__total">${ total }</span>
         {/* <button id="Checkout__checkout" onClick={ checkout }> Checkout </button> */}
         {/* <p id="Checkout__totalCount"> { count } </p> */}
-        <Link to="/payment">CHECKOUT</Link>
+        {/* <Link to="/payment">CHECKOUT</Link> */}
+        <Payment />
         {/* <Link to={{ pathname: '/payment', stuff: {id, title, img, total}}}>CHECKOUT</Link> */}
       </div>
      

@@ -41,9 +41,17 @@ ul, li{
 
   }
   #Fashion-logo{
-      /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/fashion-logos.jpg?alt=media&token=b16a7e15-55be-4990-9bc2-98fa1dc31aa9'); */
-      height: 180px;
-      width:  140px;
+      height: 160px;
+      width:  120px;
+      /* padding-botton: 1860px; */
+      /* display: flex; */
+      justify-content: top;
+  }
+
+  #Logo-container{
+    position: absolute;
+    top: 60px;
+    left: 20px;
   }
 
   
