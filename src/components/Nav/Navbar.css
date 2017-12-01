@@ -1,7 +1,8 @@
 .Nav-holder{
     border-bottom: 5px;
     border-top: 5px;
-    overflow: hidden;
+    overflow: hidden; 
+    padding-bottom: 140px;   
 }
 
 .Nav-holder, ul{
@@ -19,10 +20,15 @@ ul, li{
     padding-left: 150px;
     /* margin-left: 50px; */
     /* font: 1.5em; */
+    font-size: 25px;
+    /* font-family: 'Satisfy', cursive; */
     font-weight: bold;
-    color: black;
-    
+    font-style: italic;  
+    color: gray;
 }
+/* li{
+    background-color: fuchsia;
+} */
 
 #login-button {
     width: 100%;
@@ -53,12 +59,12 @@ ul, li{
     position: absolute;
     top: 60px;
     left: 20px;
-  }
- 
+  } 
 
 /*Hide dropdown links until they are needed*/
 li ul {
     display: none;
+    
 }
 /*Make dropdown links vertical*/
 li ul li {
@@ -72,20 +78,23 @@ li ul{
     padding: 0 20px;
 }
 /*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
+ul li{
     display: block;
 }
 
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     background: fuchsia;
     text-align: center;
     padding: 10px 0;
     display: none;
     border-radius: 5px;
+    width: 100px;
+    
 }
 /*Hide checkbox*/
 input[type=checkbox]{

@@ -20,14 +20,21 @@ function Footer(/*props*/) {
           {/* <NavItem
             eventKey={3}> */}
             {/* Some other professional link */}
-            <div>
-            <SocialIcon url="http://google.com" />
-            <SocialIcon url="http://facebook.com/" />
-            <SocialIcon url="http://twitter.com/" />
-            <SocialIcon url="http://youtube.com/" />
-            <SocialIcon url="http://vimeo.com/" />
-            <SocialIcon url="http://pinterest.com/" />
-            <SocialIcon url="http://linkedin.com/" />
+            <div className="Social-container">
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="https://www.google.com/" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="https://www.facebook.com/" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="https://twitter.com//" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="http://www.youtube.com/" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="http://www.vimeo.com/" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="http://www.pinterest.com/" />
+              {/* <div className="Social-icon"> */}
+                <SocialIcon url="http://www.linkedin.com/" />
             </div>
           {/* </NavItem> */}
         </Nav>

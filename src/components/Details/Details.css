@@ -9,19 +9,21 @@
   
   #Details__storeLink {
     text-decoration: none;
-    color: black;
+    color: gray;
     font-weight: bold;
     font-size: 18px;
   }
   
   #Details__title {
     font-weight: bold;
+    color: gray;
     font-size: 30px;
     margin: 0px;
   }
   
   #Details__price {
     font-size: 25px;
+    color: gray;
     margin-top: 0px;
   }
   
@@ -47,7 +49,7 @@
     justify-content: center;
     align-items: center;
   }
-  #StoreProduct__addToCart{
+  /* #StoreProduct__addToCart{
     background-color: fuchsia;
     color: white;
     width: 85px;
@@ -63,4 +65,4 @@
     position: relative;
     font-weight: bold;
     
-  }
+  } */

@@ -1,11 +1,24 @@
+body{
+    /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/515631825.jpg?alt=media&token=9d2c5ee3-a2b9-4ec0-8a3f-098e714c40df');
+    background-size: cover; */
+
+}
+Main-container{
+    display: inline-block; 
+}
+
+
 .Home{
     /* background-image: url('https://i.pinimg.com/736x/3a/be/c1/3abec1c81543f58c385cc9f065c6da84--hot-pink-stuff-all-things-pink.jpg'); */
-    background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg'); 
+    /* background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg');  */
+    background-image: url('../../images/515631825.jpg'); 
     margin: 0;
     background-size: cover;
-    height: 800px;
-    width: 50%; 
-    justify-self: center;
+    height: 1000px;
+    width: 100%; 
+    justify-self: center; 
+    background-size: cover;
+    align-content: center;
     
 }
 .Search-Button{
@@ -22,4 +35,57 @@ font-size: 1.5rem;
     width: 180px;
     height: 45px;
     border-radius: 5px;
+}
+.Home2{
+    /* background-image: url('../../images/stock-vector-black-and-white-retro-fashion-models-in-sketch-style-hand-drawn-vector-illustration-337423619.jpg'); 
+    background-repeat: no-repeat; */
+    /* height: 1000px; */
+    width: 100%;
+    background-color: black;
+    display: block;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+.Top-Left{
+    background-color: red;
+    background-image: url('../../images/8a76815c27b77946409dda01e2a8cd1c.jpg');
+    height: 500px;
+    
+}
+
+.Top-Right{
+    /* background-image: url('../../images/watercolor-woman-face-with-flowers-in-the-hair_23-2147492509.jpg'); */
+    background-color: rgb(141, 141, 179);
+    /* background-image: url("../../images/vsmodel-1.gif"); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 500px;
+  ;
+} 
+
+.Bottom-Left{
+    background-color: rgb(144, 148, 144);
+    height: 500px;
+    width: 600px;
+}
+
+.Bototm-Right{
+    background-color: yellow;
+    background-image: url('../../images/acd77669a08cc497f66278687a9fc377.png');
+    height: 500px;
+    width: 800px;
+}
+.Top{
+    display: inline;
+}
+.Bottom{
+
+} 
+.left,
+.right {
+  float: left;
+  width: 50%;
+  height: 500px;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }

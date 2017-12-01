@@ -1,4 +1,4 @@
-#engadget-footer-sitemap-container {
+/* #engadget-footer-sitemap-container {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
@@ -25,8 +25,8 @@
         }
         }	  
     }
-  }
-  #engadget-footer-social-container {
+  } */
+  /* #engadget-footer-social-container {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
@@ -75,7 +75,7 @@
         margin-bottom: 0;
       }
     }
-  }
+  } */
   
   #engadget-footer-contact-details-container {
     max-width: 100%;
@@ -133,8 +133,16 @@
            
           }
           font-size: 0.9rem;
-          .fa {padding: 0 0.4rem;}
+          .fa {padding: 20 0.4rem;}
       }
     }
   }
+.Social-container, Social-icon{
+  margin-right: 60px;
+  display: table-row;
+}
+SocialIcon{
+  padding: 60px;
+}
+
   

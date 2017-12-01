@@ -20,7 +20,7 @@ import Login from '../Login/Login';
     <ul>
       <Link to="/">
       <div id="Logo-container">
-         <li> <img id="Fashion-logo"     src="https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/fashion-logos.jpg?alt=media&token=b16a7e15-55be-4990-9bc2-98fa1dc31aa9"/> 
+         <li> <img id="Fashion-logo" src="https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/fashion-logos.jpg?alt=media&token=b16a7e15-55be-4990-9bc2-98fa1dc31aa9"/> 
          </li>
          </div>
       </Link>

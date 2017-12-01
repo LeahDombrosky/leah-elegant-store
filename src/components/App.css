@@ -1,9 +1,16 @@
-body{
-  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/Luxury_crepe_-_hot_pink.jpg?alt=media&token=96b39a3c-659c-4d16-a9ca-03f685bcd314'); */
-  /* background-image: <iframe width="854" height="480" src="https://www.youtube.com/embed/tatgxtiS8g0" frameborder="0" gesture="media" allowfullscreen></iframe>; */
-  background-size: cover;
-}
 
+body {
+	/* background: repeating-linear-gradient(-45deg,pink,pink 20px,fuchsia 20px,fuchsia 40px);
+	background-size:56px 56px;This is unique for this background, need to find a pattern and develop a formula */
+	background-position-x:0%;
+  -webkit-animation:'slide' 20s infinite linear forwards;
+  background-size: cover;
+  background-color: rgb(241, 219, 223);
+} 
+header{
+  background-image: url("../images/235836866b71f0b (1).jpg");
+  background-repeat: y;
+}
 
 .App {
   text-align: center;
@@ -17,7 +24,7 @@ body{
 .App-header {
   /* background-image: <iframe width="854" height="480" src="https://www.youtube.com/embed/tatgxtiS8g0" frameborder="0" gesture="media" allowfullscreen></iframe>; */
   background-color: white; 
-  height: 250px;
+  height: 300px;
   padding: 20px;
   color: black;
 }
@@ -45,13 +52,22 @@ h1{
   margin-top: -10px;
   justify-content: center;
 }
-
+/* 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-/*Responsive Styles*/
 
+@-webkit-keyframes 'slide' {
+	0%{
+		background-position-x:0%;
+	}
+	100% {
+		background-position-x:100%;
+	}
+} */
+
+/*Responsive Styles*/
 @media(min-width: 500px){
   h1{
     font-size: 12px;
