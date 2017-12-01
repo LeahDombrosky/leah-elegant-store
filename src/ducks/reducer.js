@@ -5,6 +5,7 @@ const axios = require('axios');
 const initialState = {
   stuff: [],
   cart: [],
+  user: {},
   loading: false
 }
 
@@ -14,6 +15,7 @@ const GET_APPAREL = "GET_APPAREL";
 const GET_SHOES = "GET_SHOES";
 const ADD_TO_CART = "ADD_TO_CART";
 const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+const REQ_USER = "REQ_USER";
 const CHECKOUT = "CHECKOUT";
 
 // Reducer
@@ -45,7 +47,7 @@ export default function reducer( state = initialState, action ) {
       return Object.assign({},state,{cart: [ ...state.cart, action.payload ]})
     };
     // return state;
-
+ 
     case REMOVE_FROM_CART: 
     console.log("cart:", state.cart)
     if ( state.cart.indexOf( action.payload ) !== -1 ) {
@@ -55,8 +57,16 @@ export default function reducer( state = initialState, action ) {
       console.log("cart after splice", state.cart)
       return Object.assign({},state,{cart: state.cart })
     };
-    
     return state;
+
+    case REQ_USER + "_PENDING":
+    return Object.assign({}, state, { isLoading: true })
+    case REQ_USER + "_FULFILLED":
+    console.log(action.payload);
+    return Object.assign({}, state, {
+      isLoading: false,
+      user: action.payload
+    })
 
     case CHECKOUT: return Object.assign({}, initialState);
 
@@ -103,5 +113,12 @@ export function checkout() {
   return {
     type: CHECKOUT,
     payload: null
+  }
+}
+
+export function requestUser( user_id ) {
+  return {
+    type: REQ_USER,
+    payload: user_id
   }
 }

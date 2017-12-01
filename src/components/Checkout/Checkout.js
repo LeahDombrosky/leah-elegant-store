@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import StripeCheckout from 'react-stripe-checkout';
 import { checkout, removeFromCart } from '../../ducks/reducer';
 import { connect } from "react-redux";

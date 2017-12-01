@@ -13,7 +13,10 @@ import Login from '../Login/Login';
         }
     render() {
     return (
+
 <div className = "Nav-holder">
+<label for="show-menu" class="show-menu">Show Menu</label>
+<input type="checkbox" id="show-menu" role="button" />
     <ul>
       <Link to="/">
       <div id="Logo-container">
@@ -21,6 +24,11 @@ import Login from '../Login/Login';
          </li>
          </div>
       </Link>
+      {/* <label for="hamburger" class="hamburger">
+      <img src="hamburger.png" alt="menu" title="menu" id="burger"></img>
+      </label>
+      <input type="checkbox" id="hamburger" role="button">
+ */}
       <Link to="/"><li>HOME</li></Link>
       <Link to="/store"><li>FASHION</li></Link>
       <Link to="/apparel"><li>APPAREL</li></Link>
@@ -37,6 +45,7 @@ import Login from '../Login/Login';
           {/* <ShoppingCart id="Nav__shoppingCart" /> */}
      </div>
 </div>
+
 )
     }
 }

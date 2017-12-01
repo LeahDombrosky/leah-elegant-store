@@ -34,6 +34,7 @@ const Payment = ({ name, description, amount }) =>
   description={description}
   amount={fromEuroToCent(amount)}
   token={onToken(amount, description)}
+  panelLabel="Pay Your Total"
   currency={CURRENCY}
   stripeKey={STRIPE_PUBLISHABLE}
 />
