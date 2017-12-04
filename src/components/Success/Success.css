@@ -1,0 +1,14 @@
+/* .Main-container{
+    border-color: black; */
+    /* background-size: 5px; */
+/* } */
+.Main-container{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/tumblr_nepj3bKQF51rn883to2_250.gif?alt=media&token=4013d02c-703b-4679-ad1b-23d30049f05e');
+    /* background-size: cover; */
+    justify-self: center;
+    background-repeat: no-repeat; 
+} 
+h1{
+    font-size: 2.5em;
+    color: fuchsia;
+}

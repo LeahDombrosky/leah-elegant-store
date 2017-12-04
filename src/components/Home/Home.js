@@ -16,7 +16,7 @@ class Home extends Component {
         </div>    
         <div className="wrapper">
         
-           <div className="left Top-Left"></div>
+          <div className="left Top-Left"></div>
           <div className="right Top-Right"></div>
          
           <div className="left Bottom-Left"></div>

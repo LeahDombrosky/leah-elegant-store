@@ -17,7 +17,7 @@
 
 ul, li{
     list-style-type: none;
-    padding-left: 150px;
+    padding-left: 100px;
     /* margin-left: 50px; */
     /* font: 1.5em; */
     font-size: 25px;
@@ -124,3 +124,8 @@ input[type=checkbox]:checked ~ #menu{
         display:block;
     }
 }
+#Music{
+    margin-left: 80px;
+}
+
+

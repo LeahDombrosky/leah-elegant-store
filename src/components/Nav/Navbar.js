@@ -44,6 +44,12 @@ import Login from '../Login/Login';
           {/* <div id="Nav__itemsInCart"> { items } </div> */}
           {/* <ShoppingCart id="Nav__shoppingCart" /> */}
      </div>
+     {/* <audio controls>
+       <source src="https://www.computerhope.com/jargon/m/example.mp3" />
+     </audio> */}
+     <div id="Music">
+     <embed src="https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/189.mp3?alt=media&token=9cf4b719-d9ea-4aff-84c9-e61602ffd864" align="baseline" border="0" width="145" height="60" autostart="false" loop="true"/>
+    </div>
 </div>
 
 )

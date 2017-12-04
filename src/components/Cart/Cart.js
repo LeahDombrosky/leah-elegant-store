@@ -5,6 +5,7 @@ import Product from '../../components/Store/Product/Product';
 import ShoppingCart from 'react-icons/lib/fa/shopping-cart';
 import { Link } from "react-router-dom";
 import './Cart.css';
+import { checkout, removeFromCart } from '../../ducks/reducer';
 
 class Cart extends Component {
   constructor() {
@@ -72,4 +73,4 @@ function mapStateToProps( state ) {
   return state
 }
 
-export default connect( mapStateToProps )( Cart );
+export default connect( mapStateToProps, { checkout, removeFromCart } )( Cart );

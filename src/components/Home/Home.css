@@ -54,9 +54,10 @@ font-size: 1.5rem;
 }
 
 .Top-Right{
-    /* background-image: url('../../images/watercolor-woman-face-with-flowers-in-the-hair_23-2147492509.jpg'); */
     background-color: rgb(141, 141, 179);
     /* background-image: url("../../images/vsmodel-1.gif"); */
+    /* background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/a61b99317c4a0d557cb3680b339906a6%20(1).jpg?alt=media&token=4b794909-3f5c-4cf1-9ba6-050a31708598');  */
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/anigif_enhanced-18912-1443807791-2.gif?alt=media&token=33bc3501-fef2-47b9-905e-d31658b7effd'); 
     background-repeat: no-repeat;
     background-size: cover; 
     height: 500px;
@@ -64,6 +65,7 @@ font-size: 1.5rem;
 } 
 
 .Bottom-Left{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/leah-elegant-store.appspot.com/o/last-call-contemporary.gif?alt=media&token=a074bf57-840b-4447-a82b-12a929bd316f');
     background-color: rgb(144, 148, 144);
     height: 500px;
     width: 600px;
@@ -74,6 +76,8 @@ font-size: 1.5rem;
     background-image: url('../../images/acd77669a08cc497f66278687a9fc377.png');
     height: 500px;
     width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Top{
     display: inline;

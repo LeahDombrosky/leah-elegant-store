@@ -7,7 +7,7 @@ import TraashO from 'react-icons/lib/fa/trash-o';
 // import Times from 'react-icons/lib/fa/times';
 
 
-export default function Product( { title, img, price, id, removeFromCart } ) {
+export default function Product( { title, img, price, id, removeFromCart, count } ) {
 return (
   <div id="CheckoutProduct__container">
         <img id="CheckoutProduct__img" src={ img } alt="Product" width="200px" height="240px" />
@@ -17,6 +17,7 @@ return (
           <p id="CheckoutProduct__title"> { title } </p> 
     </Link>
           <p id="CheckoutProduct__price"> ${ price } </p>
+          
            <div onClick={ () => { removeFromCart( id ) } }>
            {/* <MinusSquare id="MinusSquare" />  */}
           <TraashO id="TraashO"/>

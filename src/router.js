@@ -8,6 +8,7 @@ import Shoes from './components/Shoes/Shoes';
 import Details from './components/Details/Details';
 import Checkout from './components/Checkout/Checkout';
 import Payment from './components/Payment/Payment';
+import Success from './components/Success/Success';
 
 
 export default (
@@ -19,5 +20,6 @@ export default (
     <Route component={ Details } path="/details/:id" /> 
     <Route component={ Checkout } path="/checkout" />
     <Route component={ Payment } path="/payment" />
+    <Route component={ Success } path="/success" />
   </Switch>
 )

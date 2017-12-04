@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import Product from './Product/Product';
 import Payment from '../Payment/Payment';
 import './Checkout.css';
+import CheckCircle from 'react-icons/lib/fa/check-circle';
+
 
 class Checkout extends Component {
 render() {
@@ -32,13 +34,15 @@ render() {
       <div id="Checkout__totalContainer">
         <p id="Checkout__totalTitle"> Total </p>
         <span id="Checkout__total">${ total }</span>
+        <p id="Checkout__quantity"> Items in  Cart </p>
+        <span id="Checkout__count">{ count }</span>
         {/* <button id="Checkout__checkout" onClick={ checkout }> Checkout </button> */}
         {/* <p id="Checkout__totalCount"> { count } </p> */}
         {/* <Link to="/payment">CHECKOUT</Link> */}
         <Payment />
         {/* <Link to={{ pathname: '/payment', stuff: {id, title, img, total}}}>CHECKOUT</Link> */}
       </div>
-     
+      <Link to="/success"><CheckCircle id="CheckCircle"/></Link>
     </div>
   )
 }
@@ -47,7 +51,7 @@ render() {
 function mapStateToProps( state ) {
   var stuffInCart = state.cart.map( id => state.stuff.filter( stuff => stuff.id === id )[0] );
   var total = stuffInCart.reduce( ( total, stuff ) => total + parseFloat(stuff.price), 0 ).toFixed(2);
-  var count = count + 1;
+  var count = stuffInCart.length;
   return { stuffInCart, total, count };
 }
 
